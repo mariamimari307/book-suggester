@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>BookTok აპი</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QLabel" name="welcomeLabel">
+      <property name="text">
+       <string>კეთილი იყოს თქვენი მობრძანება BookTok-ში</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QComboBox" name="genreComboBox1"/>
+    </item>
+    <item>
+     <widget class="QComboBox" name="genreComboBox2"/>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="formatLayout">
+      <item>
+       <widget class="QRadioButton" name="printRadioButton">
+        <property name="text">
+         <string>ბეჭდური</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="digitalRadioButton">
+        <property name="text">
+         <string>ციფრული</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QCheckBox" name="fictionCheckBox">
+      <property name="text">
+       <string>მხატვრული ლიტერატურა</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QListWidget" name="selectionList"/>
+    </item>
+    <item>
+     <widget class="QPushButton" name="recommendButton">
+      <property name="text">
+       <string>მიიღე რჩევა</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QWidget" name="recommendationWidget">
+      <layout class="QVBoxLayout" name="recommendationLayout"/>
+     </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="dateLayout">
+      <item>
+       <widget class="QLabel" name="dateLabel">
+        <property name="text">
+         <string>აირჩიე წასაკითხი თარიღი:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QDateEdit" name="readingDateEdit"/>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QTextEdit" name="commentEdit">
+      <property name="placeholderText">
+       <string>დაწერე კომენტარი...</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="buttonLayout">
+      <item>
+       <widget class="QPushButton" name="addToListButton">
+        <property name="text">
+         <string>წასაკითხ სიაში დამატება</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="viewListButton">
+        <property name="text">
+         <string>სიის ნახვა</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="restartButton">
+        <property name="text">
+         <string>განახლება</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
